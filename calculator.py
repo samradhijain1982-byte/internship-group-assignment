@@ -16,6 +16,8 @@ def power(a,b):
     return a**b
 
 def modulus(a,b):
+    if b == 0:
+        raise ValueError("Cannot modulus by zero")
     return a%b
 
 def floor_division(a,b):
